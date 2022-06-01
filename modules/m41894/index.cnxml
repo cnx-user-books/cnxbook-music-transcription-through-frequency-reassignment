@@ -1,0 +1,27 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Frequency Reassignment</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41894</md:content-id>
+  <md:title>Frequency Reassignment</md:title>
+  <md:abstract/>
+  <md:uuid>57e0ea31-4a03-491d-9bb1-8ef48aa65c2c</md:uuid>
+</metadata>
+
+<content>
+    
+    <para id="id1167803732138">There are a few different methods of achieving this high resolution of the spectrogram; but, one of the most successful in terms of implementation (and the one we used in our project) is known as the Reassignment Method. Worked on by Patrick Flandrin, Francois Auger, and other various people around the world, the Reassignment Method is quite simple in theory, but the implementation and the math behind it are indeed quite complicated. The Reassignment Method takes a “blurry” spectrogram, finds the spot with the most magnitude at each time instant, and reassigns the frequency to this single value. 
+
+<media id="Chirp_Normal" alt="The Normal Spectrogram of a Chirp Signal">
+	   
+  <image mime-type="image/png" src="../../media/chirp_regular.png"/>
+		 
+</media>
+
+<media id="Chrip_Reassigned" alt="The Reassigned Spectrogram of a Chrip Signal">
+	   
+  <image mime-type="image/png" src="../../media/chirp_reassigned.png"/>
+		 
+</media></para>
+    <para id="id1167804147233">Above is the Reassignment method implemented and computed for the very well-known chirp signal. The new, reassigned spectrogram is a much higher resolution than previous one. The wide line of a signal compresses down into a very thin line. Finding the “center of gravity” of the frequency greatly increases the resolution and thus, we are able to analyze notes with much greater precision! With frequency reassignment in our toolbox, we can now continue along the road to reach our overall goal of musical transcription. </para>
+  </content>
+</document>

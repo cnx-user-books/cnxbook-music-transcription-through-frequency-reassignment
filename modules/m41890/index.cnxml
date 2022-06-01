@@ -1,0 +1,45 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Complex Input</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41890</md:content-id>
+  <md:title>Complex Input</md:title>
+  <md:abstract>The module contains the results of the Project Treble Maker system being run on a complex input.</md:abstract>
+  <md:uuid>3b98a53b-3a2a-4bc1-be6f-96e49c9addcd</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1166181329604">
+      <title>Complex Input</title>
+      <para id="id1166192219286"> Once the program was successfully developed, it was run on a recognizable tune: the first four measures of “Twinkle Twinkle Little Star.” Again, the traditional spectrogram, the reassigned spectrogram, and the MATLAB output are shown below. Each note of the song was correctly identified and output by the system.</para>
+      <section id="id1166187991055">
+        <title>Traditional Spectrogram</title>
+        <code id="eip-129" display="block"><media id="ttnorm" alt="ttn">
+	   
+  <image mime-type="image/jpng" src="../../media/twinkletwinkle_normal.png"/>
+		 
+</media>
+</code><para id="id1166171441998"><emphasis effect="bold">Fig 1</emphasis> The traditional “smeared” spectrogram of “Twinkle Twinkle Little Star”</para>
+      </section>
+      <section id="id1166168948234">
+        <title>Reassigned Spectrogram</title>
+        <code id="eip-640" display="block"><media id="ttreas" alt="ttr">
+	   
+  <image mime-type="image/png" src="../../media/twinkletwinkle_reassigned.png"/>
+		 
+</media>
+</code><para id="id1166177906626"><emphasis effect="bold">Fig 1</emphasis> The reassigned spectrogram of “Twinkle Twinkle Little Star”</para>
+      </section>
+      <section id="id1166185962340">
+        <title>System Output</title>
+        <para id="id1166167702253"> Again, the system correctly identified all of the notes of the input signal without error. The first four measures of “Twinkle Twinkle Little Star” are as follows:</para>
+        <para id="id1166167743963">Here is the MATLAB output:</para>
+        <code id="eip-58" display="block"><media id="ttres" alt="ttresult">
+	   
+  <image mime-type="image/png" src="../../media/complex result.png"/>
+		 
+</media>
+</code><para id="id1166190949912"><emphasis effect="bold">Fig 3</emphasis> The MATLAB output accurately identifying each note</para>
+      </section>
+    </section>
+  </content>
+</document>

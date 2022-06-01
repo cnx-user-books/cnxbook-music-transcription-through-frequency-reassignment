@@ -1,0 +1,32 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Analyzing the Signal</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41934</md:content-id>
+  <md:title>Analyzing the Signal</md:title>
+  <md:abstract>This module discuss the process of analyzing an audio signal for music transcription.</md:abstract>
+  <md:uuid>4a57f188-b433-49c2-bcb6-b06738ce3ca2</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1164657392231">
+      <title>The Method of Music Transcription: Analyzing the Signal</title>
+      <section id="id1164652832218">
+        <title>Distinguishing Between Notes</title>
+        <para id="id1164650433013">Our second module (get_note) is the one that will analyze the signal at a specific time, split the signal into the different notes, and get the frequencies of each note. Since each element of the matrix corresponds to a magnitude, the frequency with the maximum magnitude at a specific time instant represents the frequency of the signal at that time. Therefore, we need to check the maximum magnitude for every column and determine the frequency. Sometimes, however, some columns will not have a frequency because no note is being played ag that time instant, but it will still have a maximum magnitude at a frequency because it has noise. To deal with this, we have set a threshold magnitude that determines whether a column has a note to be analyzed or not. If the maximum magnitude at a column is below the threshold, the frequency at that time will not be considered a note, therefore it will not be analyzed.</para>
+        <para id="id1164658403026">To identify a note, we use simple edge detectors. When the signal changes frequency, the program will analyze each column until it detects another change in frequency. The range of time instants obtained from this process will represent a single note, and the frequency of the note will be the average of the maximum amplitude frequencies of each time instant in the given range. Each frequency of each note will be inputted to the identify_note module one at a time for it to output the note name. To prevent any imperfections, we have also created a time threshold, such that, if the length of a note (time instants between edge detections) is lower, such note will not be analyzed because it will not be considered a note.</para>
+        <para id="id1164653660605">NOTE: The frequency and duration thresholds work together to distinguish between notes and noise. There may be a few consecutive time instants for which noise is greater that the amplitude threshold. However, no signal should have noise that is consistently greater than the amplitude threshold for the duration of the duration threshold or longer. As such the two thresholds work in tandem to eliminate notes from the transcription process.</para>
+        <para id="id1164644775955">NOTE: The duration threshold does involve a tradeoff: while noise is eliminated, the user is prevented from analyzing a file that contains notes that are less than 100 time instants long. Any such note would be treated as noise. As such, the program may be unable to correctly handle very fast rhythms in low quality signals.</para>
+      </section>
+      
+      <section id="id1164646891796">
+        <title>Identifying Notes</title>
+        <para id="id1164655141211">Our next module will basically identify the note. It takes a frequency as an input and it outputs a string with the name of the note being played. We have created a library with different frequency ranges that correspond to different notes. The module will find the range to which the input frequency corresponds and input output the string for that range. This process will be done for every note that is given by the get_note module.</para>
+        <para id="id1164645574614">This identification process would not be possible if we only had a regular spectrogram, since the precision is very low, causing a very high error that would lead to wrong identification of a note. The frequency reassignment process is an extremely essential part of this method.</para>
+      </section>
+      <section id="id1164661569712">
+        <title>Generating Synthetic Audio Files</title>
+        <para id="id1164653980575">As an extra module, we have created a simple function to create tones, in order to test our project. In this function, we have different square waves with different frequencies. We simply create a vector with the notes that we want and we have a song to be analyzed.</para>
+      </section>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,30 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Preparing the Signal</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41960</md:content-id>
+  <md:title>Preparing the Signal</md:title>
+  <md:abstract>This module discusses the process of preparing an audio signal for music transcription.</md:abstract>
+  <md:uuid>46020ba7-5861-4a10-8890-038349a57f25</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1169138510665">
+      <title>The Method of Music Transcription: Preparing the Signal</title>
+      <para id="id1169138376182">Each “module” discussed on this page and the next is a different function in MATLAB.</para>
+      <section id="id1169138377078">
+        <title>Calculation of Reassigned Time-Frequency Representation</title>
+        <para id="id1169138419742">The method of music transcription is divided into different modules, called by a top module when necessary. First of all, we will need to calculate the reassigned spectrogram using a separate module. The output of the frequency reassignment module is a matrix with n columns and m rows. The columns represent the different time instants and the rows represent the different frequencies, both positive and negative. Each element in the matrix corresponds to the magnitude at that specific frequency at that specific time instant. The code for calculating reassigned spectrograms comes from the Time-Frequency Toolbox for MATLAB created by Patrick Flandrin and Francois Auger.</para>
+      </section>
+      <section id="id1169138510327">
+        <title>Eliminating Negative Frequencies</title>
+        <para id="id1169138419138">On the top module, all other modules are called and several other functions are made. First we will call the frequency reassignment function to calculate the reassigned matrix of our input signal (the song). Once we have obtained the matrix, we need to get rid of all negative frequencies (since we only need to analyze the positive ones to determine the note). We do this by using a Hilbert transform, which is basically a filter that only passes positive frequencies. The matrix is now ready to be analyzed.</para>
+        <figure id="id1169138418304">
+          <media id="id1169138418304_media" alt="">
+            <image mime-type="image/png" src="../../media/graphics1.png" id="id1169138418304__onlineimage" height="222" width="600"/>
+          </media>
+        </figure>
+        <para id="id1169138438984"><emphasis effect="bold">Fig. 1 </emphasis>A Hilbert Transform eliminates the negative frequency component</para>
+      </section>
+    </section>
+  </content>
+</document>

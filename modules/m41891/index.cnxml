@@ -1,0 +1,31 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Conclusions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41891</md:content-id>
+  <md:title>Conclusions</md:title>
+  <md:abstract>The module summarizes the Conclusions from Project Treble Maker.</md:abstract>
+  <md:uuid>791a6e5e-ea23-4e81-8a5d-c12659434a7d</md:uuid>
+</metadata>
+
+<content>
+    <section id="id7533688">
+      <title>Conclusions</title>
+      <para id="id6888305">After completing the project, we concluded the following:</para>
+      <list id="id6636208" list-type="bulleted">
+        <item>Frequency reassignment is necessary for music transcription</item>
+        <item>There is significant room to improve upon this system in order to create a comprehensive music transcription technology.</item>
+      </list>
+      <para id="id6889633">Ultimately, it’s clear that this music transcription technology has great potential for expansion and could eventually become a useful tool for music lovers everywhere.</para>
+      <section id="id6705163">
+        <title>The necessity of Frequency Reassignment</title>
+        <para id="id6607454"> After attempting music transcription with both reassigned time-frequency representations of signals and standard ones, it is clear that frequency reassignment is necessary to achieve a high level of accuracy in note identification. The “smearing” of the frequency domain that occurs with a standard representation is simply too great to provide an accurate indication of what note has been played. A “smeared” spectrum might include significant power at frequencies ranging of several distinct notes. For example, if an “E” was played, the power might be distributed across the “Eb” below that “E” and the “E” itself in a manner that prevents the “E” from being correctly identified. As such, the high frequency resolution provided by reassignment is necessary for transcription accuracy.</para>
+      </section>
+      <section id="id7606338">
+        <title>Expanding on the Foundation</title>
+        <para id="id7677506"> If this project were expanded, the next steps would include expanding the range of inputs that the transcription system can handle. Obviously, music is not limited to single tonal inputs. The system could be expanded to include chords and non tonal sounds by analyzing reassigned spectrograms of those signals and creating a template for comparison for unknown musical signals. Essentially, this would mean expanding upon the library of note “envelopes” employed by the “identify_note” MATLAB function discussed earlier to include entries for these other signals. This process would also involve modifying the algorithm for distinguishing between different notes to account for these expanded inputs.</para>
+        <para id="id7211215"> Additionally, provision could be made for recorded signals by either improving the computational resources available (improved processor, additional MATLAB memory) or by finding a faster algorithm to compute reassigned time-frequency representations of signals. </para>
+        <para id="id6272030"/>
+      </section>
+    </section>
+  </content>
+</document>

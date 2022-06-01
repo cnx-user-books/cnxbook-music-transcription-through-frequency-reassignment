@@ -1,0 +1,14 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Introduction</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41893</md:content-id>
+  <md:title>Introduction</md:title>
+  <md:abstract>Motivation for Music Transcription through Frequency Reassignment</md:abstract>
+  <md:uuid>23885d56-c134-4bec-b766-b7aab127b0cc</md:uuid>
+</metadata>
+
+<content>
+    <para id="id3562784">Imagine yourself as a musician, and you hear a song that you would like to play/practice. Either you can go to a music store and buy the score, or order it online; HOWEVER, there is a third option: you can use a program that will take an audio file as an input, and output the notes of the piece. Our group project forms a foundation for such a musical transcription program. </para>
+    <para id="id1169989456930"/>
+  </content>
+</document>

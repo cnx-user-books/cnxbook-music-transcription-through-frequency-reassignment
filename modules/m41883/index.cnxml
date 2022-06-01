@@ -1,0 +1,31 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Results</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m41883</md:content-id>
+  <md:title>Results</md:title>
+  <md:abstract>This module summarizes the results of Project Treble Maker.</md:abstract>
+  <md:uuid>15586511-8397-40cf-a7b7-e983d065ab19</md:uuid>
+</metadata>
+
+<content>
+    <section id="id4898710">
+      <title>Results</title>
+      <para id="id1171525922599"> Ultimately, we succeeded in creating a foundational music transcription system. The system successfully evaluates signals of a certain type of input and outputs the notes that correspond to that signal. The music transcription system we developed is currently limited to inputs with the following characteristics:</para>
+      <list id="id1171528333822" list-type="bulleted">
+        <item>Tonal inputs (as opposed to a hand clap, a drum hit, etc.)</item>
+        <item>Single notes (as opposed to chords)</item>
+        <item>Notes of at least 100 time instants in duration</item>
+      </list>
+      <para id="id1171528075937">Other limitations include:</para>
+      <list id="id1171523318464" list-type="bulleted">
+        <item>Size of the MATLAB signal vector (tradeoff between signal length and signal quality)</item>
+      </list>
+      <para id="id1171525444950">Additionally, the system does not currently print out the duration of the note. However, during the “get_note” program, the number of time instants in a note is calculated. By simply multiply this number by a sampling frequency (provided as an input from the user, potentially in the form of a tempo), the duration of a note could easily be calculate. It would then be a simple matter to print out a duration vector along with a note name vector.</para>
+      <para id="id1171528131712">Possibilities for improving upon these limitations are expanded on in the Conclusions section.</para>
+      <section id="id1171523825041">
+        <title>Tradeoff between signal length and quality</title>
+        <para id="id1171524687577"> The current method for calculating reassigned time-frequency representation of a signal is computationally intensive. This puts a limit on the size of signal vector for which MATLAB can calculate the reassigned spectrogram (since the program requires a spectrogram frequency resolution of 1024 frequency bins). As such there is a tradeoff between the length of the musical signal and its sampling quality. A longer signal can be recorded if it was recorded with a lower sampling frequency and vice versa (increases in quality and length both increase the length of the MATLAB vector). Most recording technology works at such a high sampling rate that the program can only analyze a few seconds of sound at the most. In order to analyze significant pieces of recognizable songs using this program, they have to be synthetically generated in order to control sampling quality.</para>
+      </section>
+    </section>
+  </content>
+</document>
