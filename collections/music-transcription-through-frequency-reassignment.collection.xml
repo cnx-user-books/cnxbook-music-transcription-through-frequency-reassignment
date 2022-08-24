@@ -1,69 +1,22 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Ryan Koehn ,Matt Lopez">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
-  <md:content-id>col11393</md:content-id>
-  <md:title>Music Transcription Through Frequency Reassignment</md:title>
-  
-  
-  <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
-  <md:language>en</md:language>
-
-  
-
-  
-  
-  
-  
-  
-
-  <md:uuid>dc8d0c50-79a2-41b9-9f70-c28d7b5ed074</md:uuid>
-<md:slug>music-transcription-through-frequency-reassignment</md:slug>
-</metadata>
-
+    <md:content-id>col11393</md:content-id>
+    <md:title>Music Transcription Through Frequency Reassignment</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/"/>
+    <md:language>en</md:language>
+    <md:uuid>dc8d0c50-79a2-41b9-9f70-c28d7b5ed074</md:uuid>
+    <md:slug>music-transcription-through-frequency-reassignment</md:slug>
+  </metadata>
   <col:content>
-    
-      <col:module document="m41893"/>
-        
-      
-    
-    
-      <col:module document="m41892"/>
-        
-      
-    
-    
-      <col:module document="m41894"/>
-        
-      
-    
-    
-      <col:module document="m41960"/>
-        
-      
-    
-    
-      <col:module document="m41934"/>
-        
-      
-    
-    
-      <col:module document="m41964"/>
-        
-      
-    
-    
-      <col:module document="m41890"/>
-        
-      
-    
-    
-      <col:module document="m41883"/>
-        
-      
-    
-    
-      <col:module document="m41891"/>
-        
-      
-    
+    <col:module document="m41893"/>
+    <col:module document="m41892"/>
+    <col:module document="m41894"/>
+    <col:module document="m41960"/>
+    <col:module document="m41934"/>
+    <col:module document="m41964"/>
+    <col:module document="m41890"/>
+    <col:module document="m41883"/>
+    <col:module document="m41891"/>
   </col:content>
 </col:collection>
